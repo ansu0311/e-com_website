@@ -1,56 +1,86 @@
+
 .hero{
-    height: 100vh;
-    background-image: linear-gradient(180deg, #fde1ff,#e1ffea22 60%);
+    height: 32vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw;
 }
-.hero-left{
-    flex: 1;
+.hero_container{
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+    align-items: center;
 }
-.hero-right{
-    color: #090909;
-    font-size: 26px;
-}
-.hero-left h2{
-    color: #090909;
-    font-size: 26px;
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3vw;
     font-weight: 600;
+    margin-bottom: 4vw;
 }
-.hero-left p{
-    color: #171717;
-    font-size: 100px;
+.banner_container{
+    display: flex;
+    gap: 1vw;
+    height: 16vw;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 1vw 0 1vw;
+    width: 24vw;
+    border-radius: 1.2rem;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+}
+.banner_discription{
+    width: 60%;
+    text-align: justify;
+    font-size: 0.9vw;
+}
+.banner_text button{
+    margin: 1.5vw;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    font-size: 1vw;
     font-weight: 700;
+    color: var(--lightText);
+    background-color: var(--darkAccent);
+    text-transform: capitalize;
+    border: none;
+    border-radius: 3rem;
 }
-.hero-hand-icon{
+.banner_text button:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    border: 2px solid var(--darkAccent);
+    color: var(--darkAccent);
+    background-color: transparent;
+}
+.logo_holder{
     display: flex;
+    background-color: var(--lightShades);
+    color: var(--darkShades);
+    width: 65vw;
+    margin-top: 4vw;
+    height: 4vw;
     align-items: center;
-    gap: 20px;
+    border-radius: 3rem;
+    justify-content: space-around;
 }
-.hero-hand-icon img{
-    width: 105px;
-}
-.hero-latest-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 310px;
-    height: 70px;
-    border-radius: 75px;
-    margin-top: 30px;
-    background: #ff4141;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-}
-.hero-right{
-    display: flex;
-    flex:1;
-    align-items: center;
-    justify-content: center;
+.logo_size{
+    height: 1.2vw;
 }

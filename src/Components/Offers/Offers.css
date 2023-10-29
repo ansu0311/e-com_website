@@ -1,44 +1,46 @@
 .offers{
-    width: 65%;
-    height: 60vvh;
+    width: 75%;
+    height: 34vw;
     display: flex;
-    margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
-    background-image: linear-gradient(180deg,#fde1ff 0%, #e1ffea22 60%);
+    margin: auto auto ;
+    margin: 2vw auto 5vw  auto ;
+    background-image: url(../Assets2/Girlgang2.png);
+    background-position: bottom;
+    background-size: cover;
+    color: #411534;
+    color: white;
 }
 .offers-left{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: center;
+
 }
 .offers-left h1{
-    color: #171717;
-    font-size: 80px;
+    margin-top: 2vw;
+    font-size: 3vw;
     font-weight: 600;
 }
 .offers-left p{
-    color: #171717;
-    font-size: 22px;
+    font-size: 1.4vw;
     font-weight: 600;
 }
 .offers-left button{
-    width: 282px;
-    height: 70px;
-    border-radius: 35px;
-    background: #ff4141;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    border-radius: 3rem;
+    background: var(--mainBrandColor);
     border: none;
-    color: white;
-    font-size: 22px;
-    font-weight: 500;
-    margin-top: 30px;
+    color: var(--darkText);
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 1.5vw;
     cursor: pointer;
 }
 .offers-right{
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     padding-top: 50px;
 }

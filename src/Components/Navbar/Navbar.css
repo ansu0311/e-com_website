@@ -1,26 +1,33 @@
+
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
+    padding: 0.6vw;
+    text-transform: capitalize;
 }
 .nav-logo{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5vw;
+}
+.nav-logo img{
+    width: 4vw;
 }
 .nav-logo p{
-    color: #171717;
-    font-size: 38px;
+    color: var(--lightText);
+    font-size: 1.2vw;
     font-weight: 600;
+}
+.nav-logo span{
+    color: var(--mainBrandColor);
 }
 .nav-menu{
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
-    color: #626262;
-    font-size: 20px;
+    gap: 4vw;
+    color: var(--lightText);
+    font-size: 1.2vw;
     font-weight: 500;
 }
 .nav-menu li{
@@ -28,7 +35,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    gap: 0.5vw;
     cursor: pointer;
 }
 .nav-menu hr{
@@ -36,38 +43,43 @@
     width: 80%;
     height: 3px;
     border-radius: 10px;
-    background: #ff4141;
+    background: var(--mainBrandColor);
 }
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 3vw;
 }
 .nav-login-cart button{
-    width: 157px;
-    height: 58px;
+    padding: 0.8vw 2vw 0.8vw 2vw  ;
     outline: none;
-    border: 1px solid #7a7a7a;
-    border-radius: 75px;
-    color: #515151;
-    font-size: 20px;
-    font-weight: 500;
-    background: white;
+    border-radius: 3rem;
+    color: var(--darkText);
+    font-size: 1.2vw;
+    font-weight: 700;
+    background: var(--mainBrandColor);
     cursor: pointer;
+    border: none;
 }
-.nav-login-cart button:active{
-    background: #f3f3f3;
+.nav-login-cart button:hover{
+    scale: 1.05;
+    transition: 0.5s;
+    background: transparent;
+    color: var(--mainBrandColor);
+    border: 2px solid var(--mainBrandColor);
+}
+.nav-login-cart img{
+    width: 1.6vw;
 }
 .nav-cart-count{
-    width: 22px;
-    height: 22px;
+    width: 1.5vw;
+    height: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
-    border-radius: 11px;
-    font-size: 14px;
-    background: red;
-    color: white;
+    margin: -2vw 0vw 0vw -3.5vw;
+    border-radius: 3rem;
+    font-size: 1vw;
+    background: var(--mainBrandColor);
+    color: var(--darkText);
 }

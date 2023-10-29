@@ -1,61 +1,69 @@
+
 .loginsignup{
-    width: 100%;
-    height: 80vh;
-    background: #fce3fe;
-    padding-top: 100px;
+    padding-top: 4vw;
+    display: flex;
+    justify-content: center;
 }
 .loginsignup-container{
-    width: 580px;
-    height: 600px;
-    background: white;
-    margin: auto;
-    padding: 40px 60px;
+    background: var(--mainBrandColor);
+    width: 30vw;
+    padding: 2vw 1vw;
+    border-radius: 1rem;
+    color: var(--darkShades);
 }
 .loginsignup-container h1{
-    margin: 20px 0px;
+    padding: 1vw 1vw;
+    font-size: 2.3vw;
 }
 .loginsignup-fields{
     display: flex;
     flex-direction: column;
-    gap: 29px;
-    margin-top: 30px;
+    gap: 1.5vw;
 }
 .loginsignup-fields input{
-    height: 72px;
-    width: 100%;
-    padding-left: 20px;
-    border: 1px solid #c9c9c9;
+    padding: 1vw 1.4vw;
+    margin: 0vw 1vw;
+    border-radius: 3rem;
+    background-color: transparent;
+    border: 3px solid var(--darkShades);
     outline: none;
-    color: #5c5c5c;
-    font-size: 18px;
+    font-weight: 600;
+    color: var(--darkText);
+    font-size: 1vw;
 }
 .loginsignup-container button{
-    width: 580px;
-    height: 72px;
-    color: white;
-    background: #ff4141;
-    margin-top: 30px;
+    color: var(--lightText);
+    background: var(--darkShades);
     border: none;
-    font-size: 24px;
+    margin: 0.5vw 4vw;
+    padding: 0.8vw 0vw;
+    font-size: 1.7vw;
+    border-radius: 3rem;
     font-weight: 500;
     cursor: pointer;
 }
-.loginsignup-login{
-    margin-top: 20px;
-    color: #5c5c5c;
-    font-size: 18px;
-    font-weight: 500;
+.account_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.loginsignup-login span{
-    color: #ff4141;
+.loginsignup-login{
+    margin-top: 1.8vw;
+    color: var(--signUp);
+    font-size: 1vw;
     font-weight: 600;
 }
+.loginsignup-login span{
+    color: var(--darkAccent);
+    font-weight: 700;
+}
 .loginsignup-agree{
+    width: 90%;
     display: flex;
     align-items: center;
-    margin-top: 25px;
-    gap: 20px;
-    color: #5c5c5c;
-    font-size: 18px;
+    margin-top: 0.5vw;
+    gap: 1vw;
+    color: var(--signUp);
+    font-size: 0.9vw;
     font-weight: 500;
 }

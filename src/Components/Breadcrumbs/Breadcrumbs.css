@@ -1,10 +1,15 @@
 .breadcrumbs{
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: #5e5e5e;
-    font-style: 16px;
+    gap: 0.5vw;
+    opacity: 70%;
+    color: var(--lightText);
+    font-size: 0.9vw;
     font-weight: 600;
-    margin: 60px 170px;
-    text-transform: capitalize;
+    margin: 2.8vw 9.5vw;
+    text-transform: uppercase;
+}
+.high{
+    color: var(--mainBrandColor);
+    opacity: 1;
 }

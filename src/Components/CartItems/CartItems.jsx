@@ -1,10 +1,21 @@
 import React, { useContext } from "react";
 import "./CartItems.css";
 import { ShopContext } from "../../Context/ShopContext";
-import remove_icon from "../Assets/cart_cross_icon.png";
+import add_icon from "../Assets2/plus.png";
+import remove_icon from "../Assets2/minus.png";
 
 const CartItems = () => {
-  const {all_product, cartItems, removeFromCart,getTotalCartAmount } = useContext(ShopContext);
+  const {all_product, cartItems, addToCart, removeFromCart,getTotalCartAmount } = useContext(ShopContext);
+
+  let subtotal = getTotalCartAmount();
+
+  const TotalBill = (subtotal) => {
+    if (subtotal >= 1000) {
+      return subtotal;
+    } else {
+      return (subtotal + 199);
+    }
+  };
 
   return (
     <div className="cartitems">
@@ -12,6 +23,7 @@ const CartItems = () => {
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
+        <p>Size</p>
         <p>Quantity</p>
         <p>Total</p>
         <p>Remove</p>
@@ -25,12 +37,13 @@ const CartItems = () => {
                 <img src={e.image} alt="" className="carticon-product-icon" />
                 <p>{e.name}</p>
                 <p>{e.new_price}</p>
-                <button className="cartitems-quantity">
-                  {cartItems[e.id]}
-                </button>
+                <p>{e.size}</p>
+                <p>{cartItems[e.id]}</p>
                 <p>${e.new_price * cartItems[e.id]}</p>
-                <img className="cartitems-remove-icon" src={remove_icon} onClick={() => {removeFromCart(e.id);}} alt=""
-                />
+                <p className="cart_buttons">
+                <img className="cartitems-remove-icon" src={add_icon} onClick={() => {addToCart(e.id);}} alt=""/>
+                <img className="cartitems-remove-icon" src={remove_icon} onClick={() => {removeFromCart(e.id);}} alt=""/>
+                </p>
               </div>
               <hr />
             </div>
@@ -44,17 +57,17 @@ const CartItems = () => {
             <div>
                 <div className="cartitems-total-item">
                     <p>Subtotal</p>
-                    <p>${() =>getTotalCartAmount}</p>
+                    <p>${subtotal}</p>
                 </div>
                 <hr />
                 <div className="cartitems-total-item">
                     <p>Shopping Fee</p>
-                    <p>Free</p>
+                    <p>{subtotal > 1000 ? "Free" : 199}</p>
                 </div>
                 <hr />
                 <div className="cartitems-total-item">
                     <h3>Total</h3>
-                    <h3>${getTotalCartAmount}</h3>
+                    <h3>${TotalBill(subtotal)}</h3>
                 </div>
             </div>
             <button>PROCEED TO CHECKOUT</button>

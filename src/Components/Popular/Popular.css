@@ -2,22 +2,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: 90vh;
+    justify-content: center;
+    color: var(--lightText);
+    padding: 2vw 0 3vw 0;
 }
 .popular h1{
-    color: #171717;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 600;
 }
 .popular hr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
+    margin-bottom: 1vw;
+    width: 25vw;
+    height: 0.2vw;
+    border-radius: 3rem;
+    background: var(--darkAccent);
+    border: none;
+    outline: none;
 }
 .popular-item{
-    margin-top: 50px;
+    margin-top: 3vw;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
 }
