@@ -2,22 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    height: 90vh;
+    justify-content: center;
+    color: var(--lightText);
 }
 .relatedproducts h1{
-    color: #171717;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: 600;
 }
-.relatedproductshr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
+.relatedproducts hr{
+    margin-bottom: 1vw;
+    width: 25vw;
+    height: 0.2vw;
+    border-radius: 3rem;
+    background: var(--darkAccent);
+    border: none;
+    outline: none;
 }
 .relatedproducts-item{
-    margin-top: 50px;
+    margin-top: 3vw;
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
 }
