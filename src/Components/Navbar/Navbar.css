@@ -8,7 +8,6 @@
 .nav-logo{
     display: flex;
     align-items: center;
-    gap: 0.5vw;
 }
 .nav-logo img{
     width: 4vw;

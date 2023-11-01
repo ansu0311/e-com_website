@@ -68,3 +68,37 @@
     color: var(--mainBrandColor);
     font-size: 0.8vw;
 }
+@media screen and (max-width:426px){
+    .footer{
+        margin: 5vw auto 0 auto;
+    }
+    .footer-logo{
+        padding-bottom: 4vw;
+    }
+    .footer-logo img{
+        width: 10vw;
+    }
+    .footer-logo p{
+        font-size: 3.5vw;
+    }
+    .footer-links{
+        padding: 3vw 0vw;
+        width: 65vw;
+        font-size: 2.2vw;
+    }
+    .footer-social-icon{
+        width: 40vw;
+    }
+    .footer-icons-container img{
+        height: 3vw;
+    }
+    .footer-copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 3vw;
+        color: var(--mainBrandColor);
+        font-size: 1.5vw;
+    }
+}
