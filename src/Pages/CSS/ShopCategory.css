@@ -1,43 +1,73 @@
-.shopcategory-banner{
-    display: block;
+.shopcategory-banner {
+  display: block;
+  margin: 2vw auto;
+  width: 75%;
+}
+.shopcategory-indexsort {
+  display: flex;
+  margin: 0vw 9.5vw;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1vw;
+}
+.shopcategory-sort {
+  padding: 0.6vw 1.6vw;
+  border-radius: 3rem;
+  border: 1.5px solid #888;
+}
+.shopcategory-indexsort p span {
+  font-weight: 600;
+}
+.shopcategory-products {
+  margin-top: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+}
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vw;
+}
+.shopcategory-loadmore button {
+  background-color: var(--darkAccent);
+  color: var(--lightText);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  padding: 1.2vw 2.5vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+@media screen and (max-width: 426px) {
+  .shopcategory-banner {
     margin: 2vw auto;
-    width: 75%;
-}
-.shopcategory-indexsort{
-    display: flex;
-    margin: 0vw 9.5vw;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1vw;
-}
-.shopcategory-sort{
-    padding: 0.6vw 1.6vw;
+    width: 85%;
+  }
+  .shopcategory-indexsort {
+    margin: 3vw 7vw;
+    font-size: 2vw;
+  }
+  .shopcategory-sort {
+    padding: 1vw 2vw;
     border-radius: 3rem;
-    border: 1.5px solid #888;
-}
-.shopcategory-indexsort p span{
+    border: 1.5px solid var(--mainBrandColor);
+  }
+  .shopcategory-sort img{
+    width: 2vw;
+  }
+  .shopcategory-indexsort p span {
+    color: var(--mainBrandColor);
     font-weight: 600;
-}
-.shopcategory-products{
-    margin-top: 1vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
-    justify-content: center;
-}
-.shopcategory-loadmore{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3vw;
-}
-.shopcategory-loadmore button{
-    background-color: var(--darkAccent);
-    color: var(--lightText);
-    border: none;
-    outline: none;
-    border-radius: 3rem;
-    padding: 1.2vw 2.5vw;
-    font-size: 1.2vw;
+  }
+  .shopcategory-loadmore {
+    padding-top: 5vw;
+  }
+  .shopcategory-loadmore button {
+    padding: 2vw 3.5vw;
+    font-size: 3vw;
     font-weight: 600;
+  }
 }

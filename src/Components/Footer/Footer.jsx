@@ -41,26 +41,38 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icon">
         <div className="footer-icons-container">
-        <Link to="/" style={{ textDecoration: "none", color: "var(--lightText)" }}>
+          <Link
+            to="/"
+            style={{ textDecoration: "none", color: "var(--lightText)" }}
+          >
             <img src={Dribble_light} alt="Dribble logo" />
-        </Link>
+          </Link>
         </div>
         <div className="footer-icons-container">
-        <Link to="https://www.linkedin.com/in/ansumannayak03/" style={{ textDecoration: "none", color: "var(--lightText)" }}>
-          <img src={LinkedIn_light} alt="LinkedIn logo" />
-        </Link>
+          <Link
+            to="https://www.linkedin.com/in/ansumannayak03/"
+            style={{ textDecoration: "none", color: "var(--lightText)" }}
+          >
+            <img src={LinkedIn_light} alt="LinkedIn logo" />
+          </Link>
         </div>
         <div className="footer-icons-container">
-        <Link to="https://github.com/ansu0311/e-com_website" style={{ textDecoration: "none", color: "var(--lightText)" }}>
+          <Link
+            to="https://github.com/ansu0311/e-com_website"
+            style={{ textDecoration: "none", color: "var(--lightText)" }}
+          >
             <img src={gitHub_light} alt="GitHub logo" />
-        </Link>
+          </Link>
         </div>
         <div className="footer-icons-container">
           <img src={Website_light} alt="Website logo" />
         </div>
         <div className="footer-icons-container">
-        <Link to="https://drive.google.com/file/d/1cWUnMvYoihSwrYVH9rdcgIUuGlcxyt81/view?usp=sharing" style={{ textDecoration: "none", color: "var(--lightText)" }}>
-          <img src={Resume_light} alt="Resume logo" />
+          <Link
+            to="https://drive.google.com/file/d/1cWUnMvYoihSwrYVH9rdcgIUuGlcxyt81/view?usp=sharing"
+            style={{ textDecoration: "none", color: "var(--lightText)" }}
+          >
+            <img src={Resume_light} alt="Resume logo" />
           </Link>
         </div>
       </div>

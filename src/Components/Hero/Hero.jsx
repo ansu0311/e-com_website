@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import boy_banner from "../Assets2/man_hat_black_color.png";
 import girl_banner from "../Assets2/girl_jacket_black_color.png";
 import Hm from "../Assets2/logo/hm-logo.png";
@@ -41,7 +41,9 @@ const Hero = () => {
               HueHarmony, fashion is a lifestyle, an art form, and a statement
               of who you are. Let us empower you to live it to the fullest.
             </div>
-            <Link to = "/login"><button>Create account</button></Link>
+            <Link to="/login">
+              <button>Create account</button>
+            </Link>
           </div>
         </div>
         <div className="logo_holder">

@@ -1,15 +1,26 @@
-.breadcrumbs{
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
-    opacity: 70%;
-    color: var(--lightText);
-    font-size: 0.9vw;
-    font-weight: 600;
-    margin: 2.8vw 9.5vw;
-    text-transform: uppercase;
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  opacity: 70%;
+  color: var(--lightText);
+  font-size: 0.9vw;
+  font-weight: 600;
+  margin: 2.8vw 9.5vw;
+  text-transform: uppercase;
 }
-.high{
-    color: var(--mainBrandColor);
-    opacity: 1;
+.high {
+  color: var(--mainBrandColor);
+  opacity: 1;
+}
+@media screen and (max-width: 426px){
+  .breadcrumbs {
+    gap: 1vw;
+    font-size: 2.1vw;
+    margin: 4vw 6vw;
+    text-transform: uppercase;
+  }
+  .breadcrumbs img{
+    width: 1.4vw;
+  }
 }
