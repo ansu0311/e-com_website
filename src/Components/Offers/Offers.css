@@ -1,64 +1,110 @@
 .offers{
-    width: 75%;
-    height: 34vw;
+    width: 60vw;
     display: flex;
-    margin: auto auto ;
-    margin: 2vw auto 5vw  auto ;
-    background-image: url(../Assets2/Girlgang2.png);
-    background-position: bottom;
-    background-size: cover;
-    color: #411534;
-    color: white;
+    margin: 2vw auto;
+    color: var(--lightText);
+    justify-content: space-between;
 }
 .offers-left{
-    flex: 1;
+    width: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-
+    justify-content: flex-end;
+    text-align: left;
+    margin-right: 0.5vw;
 }
-.offers-left h1{
-    margin-top: 2vw;
-    font-size: 3vw;
+.heading{
+    font-size: 1.6vw;
+    line-height: 110%;
     font-weight: 600;
+    margin-bottom: 1.5vw;
+}
+.heading>:nth-child(3){
+    font-size: 4.2vw;
+    line-height: 85%;
+    font-family: "AMORIA", sans-serif;
+    color: var(--darkAccent);
 }
 .offers-left p{
     font-size: 1.4vw;
     font-weight: 600;
 }
 .offers-left button{
-    padding: 1vw 1.5vw 1vw 1.5vw;
+    padding: 0.8vw 1.2vw;
     border-radius: 3rem;
-    background: var(--mainBrandColor);
-    border: none;
-    color: var(--darkText);
-    font-size: 1.2vw;
-    font-weight: 700;
-    margin-top: 1.5vw;
+    background: var(--darkAccent);
+    border: 0.2vw solid var(--darkAccent);
+    color: var(--lightText);
+    font-size: 0.9vw;
+    font-weight: 600;
+    margin-top: 1vw;
     cursor: pointer;
 }
+.offers-left button:hover{
+    border: 0.2vw solid var(--darkAccent);
+    background: var(--darkShades);
+    color: var(--darkAccent);
+}
 .offers-right{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
+width: 89%
+}
+.offers-right img{
+    object-fit: cover;
+    width: 100%;
+    height: 25vw;
+    object-position: bottom;
 }
 @media screen and (max-width:426px){
     .offers{
-        width: 80%;
-        height: 60vw;
+        width: 75vw;
+        flex-direction: row-reverse;
+        margin: 2vw auto;
     }
-    .offers-left h1{
-        margin-top: 3.5vw;
-        font-size: 4.5vw;
+    .offers-left{
+        width: 20%;
+        text-align: right;
+        margin-left: 0vw;
+    }
+    .heading{
+        font-size: 3vw;
+        line-height: 110%;
+        font-weight: 600;
+        margin-bottom: 2vw;
+    }
+    .heading>:nth-child(1){
+        font-size: 3.1vw;
+    }
+    .heading>:nth-child(3){
+        font-size: 8vw;
+        line-height: 95%;
+        font-family: "AMORIA", sans-serif;
+        color: var(--darkAccent);
     }
     .offers-left p{
-        font-size: 2.2vw;
+        font-size: 1.4vw;
+        font-weight: 600;
     }
     .offers-left button{
-        padding: 1.5vw 2.5vw;
-        font-size: 2.2vw;
-        margin-top: 1.2vw;
+        padding: 1.2vw 1.8vw;
+        border-radius: 3rem;
+        background: var(--darkAccent);
+        border: 0.2vw solid var(--darkAccent);
+        color: var(--lightText);
+        font-size: 2.5vw;
+        font-weight: 600;
+        margin: 1vw auto;
+        cursor: pointer;
+    }
+    .offers-left button:hover{
+        border: 0.2vw solid var(--darkAccent);
+        background: var(--darkShades);
+        color: var(--darkAccent);
+    }
+    .offers-right{
+    width: 75%
+    }
+    .offers-right img{
+        object-fit: cover;
+        height: 55vw;
     }
 }

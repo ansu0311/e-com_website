@@ -93,10 +93,12 @@ const CartItems = () => {
           <button>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cartitems-promocode">
+          <div className="center_cont">
           <p>Enter the promocode here</p>
           <div className="cartitems-promobox">
             <input type="text" placeholder="promo code" />
             <button>Submit</button>
+          </div>
           </div>
         </div>
       </div>

@@ -1,25 +1,26 @@
 .newsletter{
-    width: 65%;
-    height: 25vw;
+    width: 60vw;
+    height: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0vw 4vw;
     border-radius: 1rem;
-    margin: 5vw auto 0vw auto;
+    margin: 2.5vw auto;
     background-color: var(--darkAccent);
 }
 .newsletter h1{
     color: var(--lightText);
-    font-size: 3vw;
+    font-size: 1.5vw;
     text-transform: capitalize;
-    font-weight: 600;
+  font-family: "AMORIA", sans-serif;
+  font-weight: 200;
 }
 .newsletter p{
     color: var(--lightText);
-    font-size: 1.2vw;
-    margin-bottom: 3vw;
+    font-size: 0.8vw;
+    margin-bottom: 2.5vw;
 }
 .newsletter div{
     display: flex;
@@ -27,8 +28,8 @@
     justify-content: space-between;
     background-color: var(--lightText);
     color: var(--darkAccent);
-    width: 35vw;
-    height: 4vw;
+    width: 25vw;
+    height: 2vw;
     border-radius: 3rem;
     border: none;
 }
@@ -39,33 +40,34 @@
     border: none;
     outline: none;
     font-weight: 400;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
 }
 .newsletter div button{
     border-radius: 3rem;
-    padding: 1.37vw 2.2vw 1.38vw 2.2vw;
+    padding: 0.47vw 1.5vw;
     border: none;
     outline: none;
     background-color: var(--darkShades);
     color: white;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
     cursor: pointer;
 }
 @media screen and (max-width:426px){
     .newsletter{
-        width: 75%;
+        width: 75vw;
         height: 35vw;
     }
     .newsletter h1{
-        font-size: 4vw;
-        margin-bottom: 2vw;
+        font-size: 3.8vw;
+        margin-bottom: 0.5vw;
     }
     .newsletter p{
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
     .newsletter div{
         width: 45vw;
         height: 6vw;
+        margin-top: 2vw;
     }
     .newsletter input{
         font-weight: 600;

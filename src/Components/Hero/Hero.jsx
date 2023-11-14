@@ -20,11 +20,11 @@ const Hero = () => {
         <div className="hero_text">
           <div>
             Where Style Finds Its Perfect{" "}
-            <span style={{ color: "var(--mainBrandColor)" }}>Hue</span>
+            <span >Hue</span>
           </div>
           <div>
             Explore{" "}
-            <span style={{ color: "var(--mainBrandColor)" }}>Harmony</span> in
+            <span>Harmony</span> in
             Fashion
           </div>
         </div>

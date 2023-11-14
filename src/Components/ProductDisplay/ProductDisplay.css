@@ -16,11 +16,13 @@
   gap: 1vw;
 }
 .productdisplay-img-list img {
+  object-fit: cover;
   height: 7vw;
 }
 .productdisplay-main-img {
   width: 25vw;
   height: 31vw;
+  object-fit: cover;
 }
 .productdisplay-right {
   margin: 0px 6vw;

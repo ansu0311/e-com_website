@@ -22,25 +22,38 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  const getTotalCartAmount = () =>{
-    let sumTotal = 0
+  const getTotalCartAmount = () => {
+    let sumTotal = 0;
     all_product.map((e) => {
-      let quantity = Number(cartItems[e.id])
-      let price = Number(e.new_price)
-      if (quantity > 0){
-          sumTotal += (quantity * price)
+      let quantity = Number(cartItems[e.id]);
+      let price = Number(e.new_price);
+      if (quantity > 0) {
+        sumTotal += quantity * price;
       }
-  })
-  return sumTotal
-  }
+    });
+    return sumTotal;
+  };
 
-  const getTotalCartItem = () =>{
-    let quantityTotal = 0
+  const getTotalCartItem = () => {
+    let quantityTotal = 0;
     all_product.map((e) => {
-      quantityTotal += Number(cartItems[e.id])
-    })
-    return quantityTotal
-  }
+      quantityTotal += Number(cartItems[e.id]);
+    });
+    return quantityTotal;
+  };
+
+  const listmaking = (Collection) => {
+    const list_needed = all_product.filter(obj => obj.collection === Collection).map(obj => ({
+    id: obj.id,
+    name: obj.name,
+    category: obj.category,
+    image: obj.image,
+    new_price: obj.new_price,
+    old_price: obj.old_price,
+    collection: obj.collection,
+    }))
+    return list_needed;
+  };
 
   const contextValue = {
     all_product,
@@ -49,6 +62,7 @@ const ShopContextProvider = (props) => {
     addToCart,
     getTotalCartAmount,
     getTotalCartItem,
+    listmaking,
   };
 
   return (

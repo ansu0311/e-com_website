@@ -11,12 +11,14 @@ import gitHub_light from "../Assets2/social/gitHub_light.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer-logo">
-        <img src={logo} alt="logo big" />
-        <p>
-          <span>Hue</span>Harmony
-        </p>
-      </div>
+      <Link style={{ textDecoration: "none" }} to="/">
+        <div className="footer-logo">
+          <img src={logo} alt="logo big" />
+          <p>
+            <span>Hue</span>Harmony
+          </p>
+        </div>
+      </Link>
       <ul className="footer-links">
         <Link
           to="/"
@@ -42,7 +44,7 @@ const Footer = () => {
       <div className="footer-social-icon">
         <div className="footer-icons-container">
           <Link
-            to="/"
+            to="https://dribbble.com/shots/23018997-HueHarmony-Unveiling-Luxury-Clothing?utm_source=Clipboard_Shot&utm_campaign=Ansu0311&utm_content=HueHarmony%3A%20Unveiling%20Luxury%20Clothing&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Ansu0311&utm_content=HueHarmony%3A%20Unveiling%20Luxury%20Clothing&utm_medium=Social_Share"
             style={{ textDecoration: "none", color: "var(--lightText)" }}
           >
             <img src={Dribble_light} alt="Dribble logo" />
@@ -65,7 +67,12 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-icons-container">
-          <img src={Website_light} alt="Website logo" />
+          <Link
+            to="https://portfolio-website-fawn-mu.vercel.app/"
+            style={{ textDecoration: "none", color: "var(--lightText)" }}
+          >
+            <img src={Website_light} alt="Website logo" />
+          </Link>
         </div>
         <div className="footer-icons-container">
           <Link
