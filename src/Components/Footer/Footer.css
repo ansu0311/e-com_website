@@ -3,20 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5vw auto 0 auto;
+  margin: 1.5vw auto 0 auto;
 }
 .footer-logo {
-  padding-bottom: 2vw;
   display: flex;
   align-items: center;
 }
 .footer-logo img {
-  width: 6vw;
+  width: 4vw;
 }
 .footer-logo p {
   color: var(--lightText);
-  font-size: 1.8vw;
-  font-weight: 600;
+  font-size: 1.6vw;
+  font-family: "AMORIA", sans-serif;
 }
 .footer-logo span {
   color: var(--mainBrandColor);
@@ -25,10 +24,10 @@
   display: flex;
   list-style: none;
   padding: 3vw 0vw;
-  width: 45vw;
+  width: 35vw;
   justify-content: space-around;
   color: var(--lightText);
-  font-size: 1.1vw;
+  font-size: 0.9vw;
 }
 .footer-links li {
   cursor: pointer;
@@ -41,64 +40,61 @@
 }
 .footer-social-icon {
   display: flex;
-  width: 30vw;
+  width: 25vw;
   justify-content: space-around;
 }
 .footer-icons-container img {
-  height: 1.7vw;
+  height: 1.5vw;
 }
 .footer-icons-container img:hover {
   scale: 1.1;
   transition: 0.5s;
 }
 .footer-copyright hr {
-  width: 80%;
+  width: 70vw;
   border: none;
   border-radius: 3rem;
   height: 0.1vw;
-  margin-bottom: 3vw;
   background-color: var(--darkAccent);
+  margin-bottom: 1vw;
 }
 .footer-copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-  padding: 2vw;
+  margin: 1vw;
   color: var(--mainBrandColor);
   font-size: 0.8vw;
 }
 @media screen and (max-width: 426px) {
-  .footer {
-    margin: 5vw auto 0 auto;
-  }
-  .footer-logo {
-    padding-bottom: 4vw;
-  }
   .footer-logo img {
-    width: 10vw;
+    width: 7vw;
   }
   .footer-logo p {
     font-size: 3.5vw;
   }
   .footer-links {
-    padding: 3vw 0vw;
-    width: 65vw;
-    font-size: 2.2vw;
+    flex-direction: column;
+    padding: 0vw 0vw;
+    width: 60vw;
+    align-items: center;
+    margin-top: 2vw;
+    font-size: 2.5vw;
   }
   .footer-social-icon {
-    width: 40vw;
+    margin-top: 4vw;
+    width: 75vw;
   }
   .footer-icons-container img {
-    height: 3vw;
+    height: 4.5vw;
   }
-  .footer-copyright {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    padding: 3vw;
-    color: var(--mainBrandColor);
-    font-size: 1.5vw;
+  .footer-copyright hr {
+    height: 0.4vw;
+    margin: 2vw 0vw;
+  }
+  .footer-copyright p{
+    font-size: 2vw;
+    padding: 2vw;
   }
 }

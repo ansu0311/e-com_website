@@ -1,45 +1,92 @@
-.new-collections {
+.Timeless_collection{
+  width: 50vw;
+  display: flex;
+  margin: 1.5vw auto;
+}
+.Timeless_left{
+  width: 50%;
+}
+.Timeless_left img{
+  width: 100%;
+  height: 35vw;
+  object-fit: cover;
+}
+.Timeless_right{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--lightText);
-  padding: 2vw 0 3vw 0;
+  justify-content: space-between;
+  width: 50%;
 }
-.new-collections h1 {
-  font-size: 3vw;
-  font-weight: 600;
+.text_out{
+  font-size: 0.8vw;
+  text-align: right;
+  margin-right: 1.5vw;
+  margin: auto 0vw;
 }
-.new-collections hr {
-  margin-bottom: 1vw;
-  width: 25vw;
-  height: 0.2vw;
-  border-radius: 3rem;
-  background: var(--darkAccent);
-  border: none;
-  outline: none;
+.text_out_heading{
+  font-size: 1.6vw;
+  font-family: "AMORIA", sans-serif;
+  margin-bottom: 2vw;
 }
-.collections {
-  margin-top: 3vw;
+.text_out_heading>:nth-child(2){
+  font-size: 1.2vw;
+  color: var(--mainBrandColor);
+}
+.text_out_description{
+  width: 75%;
+  margin: 0 0 0 auto;
+}
+.text_out_description>:nth-child(2){
+  margin-top: 2vw;
+}
+.text_out_description span{
+  color: var(--mainBrandColor);
+}
+
+.image_out{
   display: flex;
-  flex-wrap: wrap;
-  gap: 1vw;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.image_out img{
+  object-fit: cover;
+  height: 11vw;
+  width: 7.5vw;
 }
 @media screen and (max-width: 426px) {
-  .new-collections {
-    padding: 4vw 0 3vw 0;
+  .Timeless_collection{
+    width: 70vw;
+    flex-direction: row-reverse;
+    margin: 1.5vw auto;
   }
-  .new-collections h1 {
-    font-size: 4vw;
+  .Timeless_left img{
+    height: 50vw;
+    margin-left: 1vw;
   }
-  .new-collections hr {
-    margin: 1vw 0vw 3vw 0vw;
-    width: 30vw;
-    height: 0.4vw;
+  .text_out{
+    font-size: 1.2vw;
+    text-align: left;
+    margin-right: 1.5vw;
+    margin: auto 0vw;
   }
-  .collections {
-    margin-top: 3vw;
-    gap: 2vw;
+  .text_out_heading{
+    font-size: 3vw;
+  }
+  .text_out_heading>:nth-child(2){
+    font-size: 2.2vw;
+  }
+  .text_out_description{
+    margin: 0 auto 0 0;
+  }
+  .text_out_description>:nth-child(2){
+    margin-top: 2vw;
+  }
+  .image_out{
+    display: flex;
+    justify-content: space-between;
+  }
+  .image_out img{
+    object-fit: cover;
+    height: 15vw;
+    width: 11vw;
   }
 }

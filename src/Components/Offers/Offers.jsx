@@ -1,13 +1,20 @@
 import React from 'react'
 import './Offers.css'
+import Girlgang2 from "../Assets2/Girlgang2.png"
 
 const Offers = () => {
   return (
     <div className='offers'>
         <div className="offers-left">
-            <h1><span>Exclusive</span> Offers For You</h1>
-            <p>ONLY ON BEST SELLERS PRODUCTS</p>
+            <div className='heading'>
+              <div>Exclusive</div>
+              <div>Offers For</div>
+              <div>You</div>
+              </div>
             <p><button>Check Now</button></p>
+        </div>
+        <div className="offers-right">
+          <img src={Girlgang2} alt="" />
         </div>
     </div>
   )

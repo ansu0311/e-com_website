@@ -1,15 +1,23 @@
-:root{
-  --darkShades : #181b1b;
-  --navBarColor : #181b1b75;
-  --darkAccent : #5B3550;    /*light bright purple*/
-  --mainBrandColor : #9DCECB;   /*mild brown purplr*/
-  --lightAccent : #7C8E6E;   /*greyish purple*/
-  --lightShades : #F2F3EF;   /*light green*/
-  --lightText : #F2F3EF;   /*bluish white*/
-  --darkText : #191B1B;   /*light dark green*/
-  --signUp : #4b4b4b;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "AMORIA", sans-serif;
+  src:  url('../src//Components/Assets2/font/AMORIA-BF64a2f6809ce9e.woff') format('woff2');
+}
+
+:root {
+  --darkShades: #181b1b;
+  --navBarColor: #181b1b75;
+  --darkAccent: #5b3550; /*light bright purple*/
+  --mainBrandColor: #9dcecb; /*mild brown purplr*/
+  --lightAccent: #7c8e6e; /*greyish purple*/
+  --lightShades: #f2f3ef; /*light green*/
+  --lightText: #f2f3ef; /*bluish white*/
+  --darkText: #191b1b; /*light dark green*/
+  --signUp: #4b4b4b;
 }
 .App {
   background-color: var(--darkShades);
   color: var(--lightText);
+  font-family: "Poppins", sans-serif;
 }

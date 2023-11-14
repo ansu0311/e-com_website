@@ -13,14 +13,14 @@
 .navbar{
     top: 0px;
     position:fixed;
-    border-bottom: 0.08vw solid var(--mainBrandColor);
     background-color: var(--navBarColor);
     backdrop-filter: blur(8px);
-    width: 90vw;
+    width: 75vw;
     display: flex;
     justify-content: space-between;
     padding: 0.6vw;
     text-transform: capitalize;
+    z-index: 10;
 }
 .nav-logo{
     display: flex;
@@ -28,12 +28,12 @@
     padding: 0;
 }
 .nav-logo img{
-    width: 4vw;
+    width: 3vw;
 }
 .nav-logo p{
     color: var(--lightText);
-    font-size: 1.42vw;
-    font-weight: 600;
+    font-size: 1.5vw;
+  font-family: "AMORIA", sans-serif;
 }
 .nav-logo span{
     color: var(--mainBrandColor);
@@ -50,7 +50,7 @@
     list-style: none;
     gap: 4vw;
     color: var(--lightText);
-    font-size: 1.4vw;
+    font-size: 1vw;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -69,14 +69,14 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 3vw;
+    gap: 2vw;
 }
 .nav-login-cart button{
-    padding: 0.8vw 2vw 0.8vw 2vw  ;
+    padding: 0.6vw 1.5vw;
     outline: none;
     border-radius: 3rem;
     color: var(--darkText);
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 700;
     background: var(--mainBrandColor);
     cursor: pointer;
@@ -98,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1vw 0vw 0vw -3.5vw;
+    margin: 1vw 0vw 0vw -2.5vw;
     border-radius: 3rem;
     font-size: 1vw;
     background: var(--mainBrandColor);

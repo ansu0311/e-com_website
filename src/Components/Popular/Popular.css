@@ -1,45 +1,148 @@
-.popular {
+.containe{
+  display: flex;
+  justify-content: center;
+}
+.Popular{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--lightText);
-  padding: 2vw 0 3vw 0;
+  width: 55vw;
+  margin: 1vw auto;
 }
-.popular h1 {
-  font-size: 3vw;
-  font-weight: 600;
-}
-.popular hr {
-  margin-bottom: 1vw;
-  width: 25vw;
-  height: 0.2vw;
-  border-radius: 3rem;
-  background: var(--darkAccent);
-  border: none;
-  outline: none;
-}
-.popular-item {
-  margin-top: 3vw;
+.text_cont{
   display: flex;
-  flex-wrap: wrap;
-  gap: 1vw;
-  justify-content: center;
+  justify-content: space-between;
 }
-@media screen and (max-width: 426px) {
-  .popular {
-    padding: 4vw 0 3vw 0;
+.text_left{
+  width: 30%;
+}
+.text_left>:nth-child(2){
+  font-size: 1.35vw;
+}
+.text_left_title{
+  font-size: 1.15vw;
+  font-family: "AMORIA", sans-serif;
+}
+.text_left_bottom{
+  display: flex;
+  align-items: center;
+  margin-top: 2vw ;
+  font-size: 0.9vw;
+  color: var(--mainBrandColor);
+}
+.text_left_bottom img{
+  rotate: -90deg;
+  height: 0.6vw;
+  margin-left: 0.5vw;
+}
+.text_right{
+  width: 70%;
+  font-size: 0.8vw;
+  text-align: right;
+}
+.image_cont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55vw;
+  margin: 1vw auto;
+}
+.Popular_left{
+  width: 75%;
+}
+.Popular_left img{
+  object-fit: cover;
+  object-position: top;
+  height: 25vw;
+  width: 100%;
+}
+.Popular_right{
+  display: flex;
+  height: 25vw;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+.Popular_right img{
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 12.2vw;
+  padding: 0vw 1vw;
+}
+@media screen and (max-width: 426px){
+  .containe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
-  .popular h1 {
-    font-size: 4vw;
+  .Popular{
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    margin: 1vw auto;
   }
-  .popular hr {
-    margin: -1vw 0vw 2vw 0vw;
-    width: 30vw;
-    height: 0.4vw;
+  .text_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
   }
-  .popular {
-    margin-top: 1vw;
-    gap: 2vw;
+  .text_left{
+    width: 100%;
+  }
+  .text_left>:nth-child(2){
+    font-size: 3.2vw;
+  }
+  .text_left_title{
+    font-size: 2.7vw;
+    font-family: "AMORIA", sans-serif;
+  }
+  .text_left_bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 5vw ;
+    font-size: 2.5vw;
+    color: var(--mainBrandColor);
+  }
+  .text_left_bottom img{
+    rotate: -90deg;
+    height: 1vw;
+    margin-left: 0.5vw;
+  }
+  .text_right{
+    width: 90%;
+    margin-top: 3vw;
+    font-size: 1.5vw;
+    text-align: justify;
+  }
+  .image_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vw auto;
+  }
+  .Popular_left{
+    width: 100%;
+  }
+  .Popular_left img{
+    object-fit: cover;
+    object-position: top;
+    height: 30vw;
+    width: 100%;
+  }
+  .Popular_right{
+    display: flex;
+    height: 30vw;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .Popular_right img{
+    object-fit: cover;
+    object-position: top;
+    width: 22.5vw;
+    height: 25vw;
+    padding: 0vw 0vw;
   }
 }
