@@ -58,7 +58,7 @@ width: 89%
     .offers{
         width: 75vw;
         flex-direction: row-reverse;
-        margin: 2vw auto;
+        margin: 4vw auto;
     }
     .offers-left{
         width: 20%;

@@ -54,25 +54,25 @@
 }
 @media screen and (max-width: 426px) {
   .Timeless_collection{
-    width: 70vw;
+    width: 75vw;
     flex-direction: row-reverse;
-    margin: 1.5vw auto;
+    margin: 3vw auto;
   }
   .Timeless_left img{
-    height: 50vw;
+    height: 55vw;
     margin-left: 1vw;
   }
   .text_out{
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: left;
     margin-right: 1.5vw;
     margin: auto 0vw;
   }
   .text_out_heading{
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
   .text_out_heading>:nth-child(2){
-    font-size: 2.2vw;
+    font-size: 2.4vw;
   }
   .text_out_description{
     margin: 0 auto 0 0;
@@ -86,7 +86,7 @@
   }
   .image_out img{
     object-fit: cover;
-    height: 15vw;
-    width: 11vw;
+    height: 20vw;
+    width: 12vw;
   }
 }

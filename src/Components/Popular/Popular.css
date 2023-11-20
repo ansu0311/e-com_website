@@ -79,12 +79,12 @@
     display: flex;
     flex-direction: row;
     width: 70vw;
-    margin: 1vw auto;
+    margin: 3vw auto;
   }
   .text_cont{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     width: 40%;
   }
   .text_left{
@@ -94,7 +94,7 @@
     font-size: 3.2vw;
   }
   .text_left_title{
-    font-size: 2.7vw;
+    font-size: 2.8vw;
     font-family: "AMORIA", sans-serif;
   }
   .text_left_bottom{
@@ -112,7 +112,7 @@
   .text_right{
     width: 90%;
     margin-top: 3vw;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     text-align: justify;
   }
   .image_cont{
@@ -128,12 +128,12 @@
   .Popular_left img{
     object-fit: cover;
     object-position: top;
-    height: 30vw;
+    height: 40vw;
     width: 100%;
   }
   .Popular_right{
     display: flex;
-    height: 30vw;
+    height: 35vw;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -142,7 +142,7 @@
     object-fit: cover;
     object-position: top;
     width: 22.5vw;
-    height: 25vw;
+    height: 35vw;
     padding: 0vw 0vw;
   }
 }

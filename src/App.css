@@ -19,5 +19,8 @@
 .App {
   background-color: var(--darkShades);
   color: var(--lightText);
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
   font-family: "Poppins", sans-serif;
 }
