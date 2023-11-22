@@ -1,3 +1,8 @@
+.Email_holder ::placeholder{
+    color: var(--darkAccent);
+    font-size: 0.9vw;
+    font-weight: 600;
+}
 .newsletter{
     width: 60vw;
     height: 15vw;
@@ -53,6 +58,9 @@
     cursor: pointer;
 }
 @media screen and (max-width:426px){
+    .Email_holder ::placeholder{
+        font-size: 2vw;
+    }
     .newsletter{
         width: 75vw;
         height: 35vw;

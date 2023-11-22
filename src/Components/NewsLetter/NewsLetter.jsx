@@ -6,7 +6,7 @@ const NewsLetter = () => {
     <div className='newsletter'>
         <h1>Lets Keep the conversation going</h1>
         <p>Subscribe to our newsletter and stay updated</p>
-        <div>
+        <div className='Email_holder'> 
             <input type="email" placeholder='Your Email id' />
             <button>Subscribe</button>
         </div>

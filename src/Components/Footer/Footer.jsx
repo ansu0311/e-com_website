@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="footer-icons-container">
           <Link
-            to="https://drive.google.com/file/d/1cWUnMvYoihSwrYVH9rdcgIUuGlcxyt81/view?usp=sharing"
+            to="https://drive.google.com/file/d/1nAelXE1CLXMYDqlhg2yks1e0hGm_9kOO/view?usp=sharing"
             style={{ textDecoration: "none", color: "var(--lightText)" }}
           >
             <img src={Resume_light} alt="Resume logo" />
