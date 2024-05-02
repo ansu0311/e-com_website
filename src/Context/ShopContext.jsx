@@ -1,4 +1,3 @@
-JavaScript;
 // Import React for component creation
 import React, { createContext, useState } from "react";
 
@@ -22,25 +21,20 @@ const ShopContextProvider = (props) => {
   // State variable to store cart items (quantities of each product)
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
-  // Function to add an item to the cart, updating its quantity
+    // Function to add an item to the cart, updating its quantity
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
-
-  // Function to remove an item from the cart, decreasing its quantity
+// Function to remove an item from the cart, decreasing its quantity
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: Math.max(0, prev[itemId] - 1),
-    })); // Ensure quantity doesn't go negative
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
-
-  // Function to calculate the total cart amount considering product prices
+// Function to calculate the total cart amount considering product prices
   const getTotalCartAmount = () => {
     let sumTotal = 0;
-    all_product.map((product) => {
-      let quantity = Number(cartItems[product.id]);
-      let price = Number(product.new_price);
+    all_product.map((e) => {
+      let quantity = Number(cartItems[e.id]);
+      let price = Number(e.new_price);
       if (quantity > 0) {
         sumTotal += quantity * price;
       }
@@ -51,31 +45,27 @@ const ShopContextProvider = (props) => {
   // Function to calculate the total number of items in the cart
   const getTotalCartItem = () => {
     let quantityTotal = 0;
-    all_product.map((product) => {
-      quantityTotal += Number(cartItems[product.id]);
+    all_product.map((e) => {
+      quantityTotal += Number(cartItems[e.id]);
     });
     return quantityTotal;
   };
 
   // Function to filter and format product list based on a collection name
-  const listmaking = (collection) => {
-    const filteredList = all_product.filter(
-      (obj) => obj.collection === collection
-    ); // Filter by collection
-    const formattedList = filteredList.map((obj) => ({
-      // Create a new array with desired properties
-      id: obj.id,
-      name: obj.name,
-      category: obj.category,
-      image: obj.image,
-      new_price: obj.new_price,
-      old_price: obj.old_price,
-      collection: obj.collection,
-    }));
-    return formattedList;
+  const listmaking = (Collection) => {
+    const list_needed = all_product.filter(obj => obj.collection === Collection).map(obj => ({
+    id: obj.id,
+    name: obj.name,
+    category: obj.category,
+    image: obj.image,
+    new_price: obj.new_price,
+    old_price: obj.old_price,
+    collection: obj.collection,
+    }))
+    return list_needed;
   };
 
-  // Define the context value object containing data and functions to be shared
+// Define the context value object containing data and functions to be shared
   const contextValue = {
     all_product,
     cartItems,
@@ -85,8 +75,7 @@ const ShopContextProvider = (props) => {
     getTotalCartItem,
     listmaking,
   };
-
-  // Wrap child components with the ShopContext.Provider, making context value available
+// Wrap child components with the ShopContext.Provider, making context value available
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
